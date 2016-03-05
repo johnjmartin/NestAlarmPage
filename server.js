@@ -18,11 +18,17 @@ router.get("/",function(req,res){
 router.get("/home",function(req,res){
   res.sendFile(path + "index.html");
 });
+
 router.get("/login",function(req,res){
   res.sendFile(path + "login.html");
 });
+
 router.get("/data",function(req,res){
   res.sendFile(path + "data.html");
+});
+
+router.get("/settings",function(req,res){
+  res.sendFile(path + "profile.html");
 });
 
 app.use(express.static(paths.join(__dirname, '/public')));
