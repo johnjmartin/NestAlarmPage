@@ -76,3 +76,11 @@
 	"opencv2/core/core.hpp"
 	<list>
 
+1457175931 source:c:\users\jordan\documents\github\nestalarm\nestalarmpage\motiondetection\main.cpp
+	<opencv2/core/core.hpp>
+	<opencv2/highgui/highgui.hpp>
+	<opencv2/video/background_segm.hpp>
+	<stdio.h>
+	<iostream>
+	<sstream>
+
