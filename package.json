@@ -1,0 +1,22 @@
+{
+  "name": "john_martin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start" : "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnjmartin/NestAlarmPage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johnjmartin/NestAlarmPage/issues"
+  },
+  "homepage": "https://github.com/johnjmartin/NestAlarmPage#readme",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
+}
