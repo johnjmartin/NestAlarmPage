@@ -8,7 +8,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>SleepFull </title>
+    <title>Sleepful</title>
 
     <!-- Bootstrap core CSS -->
 
@@ -23,11 +23,10 @@
     <link href="css/icheck/flat/green.css" rel="stylesheet">
     <link href="css/floatexamples.css" rel="stylesheet" />
 
+    <!--Angular Application and Alarm Logic-->
     <script src="js/jquery.min.js"></script>
-    
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
     <script src="js/alarmLogic.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.min.js"></script>
 
     <!--[if lt IE 9]>
         <script src="../assets/js/ie8-responsive-file-warning.js"></script>
@@ -52,7 +51,7 @@
                 <div class="left_col scroll-view">
 
                     <div class="navbar nav_title" style="border: 0;">
-                        <a href="index.html" class="site_title"><i class="fa fa-clock-o"></i> <span>NestLarmClock</span></a>
+                        <a href="/home" class="site_title"><i class="fa fa-clock-o"></i> <span>Sleepful</span></a>
                     </div>
 
                     <!-- sidebar menu -->
@@ -68,7 +67,6 @@
                                         <li><a href="/data"a>User Data</a></li>
                                         <li><a href="/settings">Preferences</a>
                                         </li>
-                                    </ul>
                                     </ul>
                                 </li>
                             </ul>
@@ -93,17 +91,12 @@
                                     <span class=" fa fa-angle-down"></span>
                                 </a>
                                 <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
-                                    <li><a href="javascript:;">  Profile</a>
-                                    </li>
                                     <li>
-                                        <a href="javascript:;">
+                                        <a href="/settings">
                                             <span>Settings</span>
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="javascript:;">Help</a>
-                                    </li>
-                                    <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
+                                    <li><a href="/"><i class="fa fa-sign-out pull-right"></i> Log Out</a>
                                     </li>
                                 </ul>
                             </li>
@@ -161,13 +154,7 @@
                                             <div class="x_panel fixed_height_225">
                                                 <div class="x_title">
                                                     <h2>Alarm # {{$index+1}}</h2>
-                                                    <ul class="nav navbar-right panel_toolbox">
-                                                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                                                        </li>
-                                                        <li><a class="close-link"><i class="fa fa-close"></i></a>
-                                                        </li>
-                                                    </ul>
-                                                    <div class="clearfix"></div>
+                                            <div class="clearfix"></div>
                                                 </div>
                                                 <div class="x_content">
                                                     <p class="alarm-time">{{alarm.start_time.getHours()}}:{{alarm.start_time.getMinutes()}}AM</p>
@@ -176,6 +163,8 @@
                                                         <b class="alarm-days">{{day}}</b>
                                                     </p>
                                                 </div>
+                                            <div class="clearfix"></div>
+                                                <button ng-click="alarms.splice($index,1)" class = "remove-alarm">Remove me</button>
                                             </div>
                                         </div>
                                         

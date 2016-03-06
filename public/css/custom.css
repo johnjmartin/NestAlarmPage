@@ -6418,3 +6418,15 @@ p.alarm-time {
     font-size: 17px;
     text-align: center;
 }
+
+/*div.centerlogo{
+   display: -webkit-flex; /* Safari 
+   -webkit-align-items: center; /* Safari 7.0+ 
+   display: flex;
+   align-items: center;
+} */
+
+button.remove-alarm {
+    margin-left: 39px; 
+    width: 180px;
+}
