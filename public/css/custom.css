@@ -6367,3 +6367,66 @@ ul.notifications {
 .copyright-info {
     padding: 8px 0;
 }
+
+input.input-customtime {
+    font-size: 80px;
+    text-align: center;
+    border: 1px solid #ccc;
+    color: #888;
+    margin: 0.5em;
+    vertical-align: middle;
+    outline: 0;
+    padding: 0.5em;
+    border-radius: 320px;
+    width: calc(100% - 1px);*/
+    font-family: sans-serif;
+}
+
+label.label-customtime{
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 1em;
+    margin-top:1em;
+    margin-bottom:1em;
+    font-size: 60px;
+    font-family: sans-serif;
+}
+
+button.btn-customtime{
+    width: 25%;
+    margin: 4em;
+    margin-right: 2em;
+    margin-left: 2em;
+    font-size: 20px;
+}
+
+div.flex-container {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 200px;
+    background-color: lightgrey;
+}
+
+p.alarm-time {
+    font-size: 50px;
+    text-align: center;
+}
+
+.alarm-days {
+    font-size: 17px;
+    text-align: center;
+}
+
+/*div.centerlogo{
+   display: -webkit-flex; /* Safari 
+   -webkit-align-items: center; /* Safari 7.0+ 
+   display: flex;
+   align-items: center;
+} */
+
+button.remove-alarm {
+    margin-left: 39px; 
+    width: 180px;
+}
